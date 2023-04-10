@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="23d8129c5b1647b5abc5d7a0abfa6b75" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_23d8129c5b1647b5abc5d7a0abfa6b75 = echarts.init(
+            document.getElementById('23d8129c5b1647b5abc5d7a0abfa6b75'), 'white', {renderer: 'canvas'});
+        var option_23d8129c5b1647b5abc5d7a0abfa6b75 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "name": "stock A",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 10,
+            "data": [
+                [
+                    "t0",
+                    103
+                ],
+                [
+                    "t1",
+                    106
+                ],
+                [
+                    "t2",
+                    100
+                ],
+                [
+                    "t3",
+                    105
+                ],
+                [
+                    "t4",
+                    119
+                ],
+                [
+                    "t5",
+                    115
+                ],
+                [
+                    "t6",
+                    101
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8
+            }
+        },
+        {
+            "type": "scatter",
+            "name": "stock B",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "symbolSize": 10,
+            "data": [
+                [
+                    "t0",
+                    98.5568
+                ],
+                [
+                    "t1",
+                    60.4799
+                ],
+                [
+                    "t2",
+                    6.7748
+                ],
+                [
+                    "t3",
+                    27.1978
+                ],
+                [
+                    "t4",
+                    63.9187
+                ],
+                [
+                    "t5",
+                    39.2506
+                ],
+                [
+                    "t6",
+                    19.9818
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "stockA",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "legendHoverLink": true,
+            "data": [
+                2.8302,
+                -6.0,
+                4.7619,
+                11.7647,
+                -3.4783,
+                -13.8614
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "stockB",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "legendHoverLink": true,
+            "data": [
+                -35.9216,
+                -53.7051,
+                19.4505,
+                30.8579,
+                -21.4505,
+                -19.078
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "stock A",
+                "stock B"
+            ],
+            "selected": {
+                "stock A": true,
+                "stock B": true
+            },
+            "show": true,
+            "left": "20%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        },
+        {
+            "data": [
+                "stockA",
+                "stockB"
+            ],
+            "selected": {
+                "stockA": true,
+                "stockB": true
+            },
+            "show": true,
+            "right": "20%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "t0",
+                "t1",
+                "t2",
+                "t3",
+                "t4",
+                "t5",
+                "t6"
+            ]
+        },
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 1,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "t1",
+                "t2",
+                "t3",
+                "t4",
+                "t5",
+                "t6"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 1,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "stock price",
+            "left": "70%",
+            "bottom": "2%",
+            "padding": 5,
+            "itemGap": 10
+        },
+        {
+            "text": "increase of stock price",
+            "right": "60%",
+            "bottom": "2%",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "55%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        },
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "right": "55%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ]
+};
+        chart_23d8129c5b1647b5abc5d7a0abfa6b75.setOption(option_23d8129c5b1647b5abc5d7a0abfa6b75);
+    </script>
+</body>
+</html>
